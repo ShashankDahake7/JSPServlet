@@ -1,8 +1,0 @@
-<web-app>
-    <display-name>JSP Implicit Objects Example</display-name>
-    <!-- Define error page -->
-    <error-page>
-        <exception-type>java.lang.Throwable</exception-type>
-        <location>/error.jsp</location>
-    </error-page>
-</web-app>
