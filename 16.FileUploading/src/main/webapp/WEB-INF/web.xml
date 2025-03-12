@@ -1,0 +1,19 @@
+<web-app>
+
+  <display-name>JSP File Upload</display-name>
+
+  <context-param>
+    <param-name>file-upload</param-name>
+    <param-value>/tmp/uploads/</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.example.UploadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
