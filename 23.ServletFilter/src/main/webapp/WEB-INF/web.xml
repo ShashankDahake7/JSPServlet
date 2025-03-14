@@ -1,0 +1,36 @@
+<web-app>
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>MovieServlet</servlet-name>
+        <servlet-class>com.servlet.MovieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MovieServlet</servlet-name>
+        <url-pattern>/Servlets/MovieServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Request Logging Filter -->
+    <filter>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <filter-class>com.servlet.filters.RequestLoggingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>RequestLoggingFilter</filter-name>
+        <url-pattern>/Servlets/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Request Blocking Filter -->
+    <filter>
+        <filter-name>RequestBlockingFilter</filter-name>
+        <filter-class>com.servlet.filters.RequestBlockingFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>RequestBlockingFilter</filter-name>
+        <url-pattern>/Servlets/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
