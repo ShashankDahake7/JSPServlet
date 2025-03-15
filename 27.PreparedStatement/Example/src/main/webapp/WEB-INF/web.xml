@@ -1,0 +1,15 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.0"
+         metadata-complete="true">
+  <display-name>Jakarta JDBC CRUD</display-name>
+
+  <servlet>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>com.example.servlet.EmployeeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/employee</url-pattern>
+  </servlet-mapping>
+</web-app>
