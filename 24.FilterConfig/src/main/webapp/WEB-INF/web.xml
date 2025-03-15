@@ -1,0 +1,28 @@
+<web-app>
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.javadoubts.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Servlets/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Filter Configuration -->
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.javadoubts.servlet.LoginFilter</filter-class>
+        <init-param>
+            <param-name>country</param-name>
+            <param-value>Singapore</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/Servlets/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

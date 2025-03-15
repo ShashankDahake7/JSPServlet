@@ -1,0 +1,14 @@
+<web-app>
+
+    <!-- Checked Exception Servlet Configuration -->
+    <servlet>
+        <servlet-name>CheckedExceptionServlet</servlet-name>
+        <servlet-class>com.example.servlet.CheckedExceptionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckedExceptionServlet</servlet-name>
+        <url-pattern>/CheckedExceptionServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

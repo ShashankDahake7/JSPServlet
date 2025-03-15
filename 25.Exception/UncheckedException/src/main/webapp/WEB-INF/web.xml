@@ -1,0 +1,14 @@
+<web-app>
+
+    <!-- Unchecked Exception Servlet Configuration -->
+    <servlet>
+        <servlet-name>UncheckedExceptionServlet</servlet-name>
+        <servlet-class>com.example.servlet.UncheckedExceptionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UncheckedExceptionServlet</servlet-name>
+        <url-pattern>/UncheckedExceptionServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

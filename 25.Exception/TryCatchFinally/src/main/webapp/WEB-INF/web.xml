@@ -1,0 +1,14 @@
+<web-app>
+
+    <!-- Try Catch Finally Servlet Configuration -->
+    <servlet>
+        <servlet-name>TryCatchServlet</servlet-name>
+        <servlet-class>com.example.servlet.TryCatchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TryCatchServlet</servlet-name>
+        <url-pattern>/TryCatch</url-pattern>
+    </servlet-mapping>
+
+</web-app>
