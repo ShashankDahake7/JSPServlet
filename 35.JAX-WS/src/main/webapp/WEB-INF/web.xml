@@ -1,0 +1,23 @@
+<web-app>
+
+    <display-name>JAX-WS Service</display-name>
+
+    <listener>
+        <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>HeyNinjasService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <init-param>
+            <param-name>jakarta.xml.ws.endpoint</param-name>
+            <param-value>com.codingninjas.HeyNinjasImpl</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HeyNinjasService</servlet-name>
+        <url-pattern>/ws/hey</url-pattern>
+    </servlet-mapping>
+</web-app>
