@@ -1,0 +1,13 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>SingletonServlet</servlet-name>
+        <servlet-class>com.example.singleton.SingletonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SingletonServlet</servlet-name>
+        <url-pattern>/singleton</url-pattern>
+    </servlet-mapping>
+
+</web-app>

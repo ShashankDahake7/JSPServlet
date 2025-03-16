@@ -1,0 +1,13 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <servlet-class>com.example.jdbc.DatabaseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <url-pattern>/database</url-pattern>
+    </servlet-mapping>
+
+</web-app>
